@@ -1,0 +1,15 @@
+.customer__information {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.customer__location {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.customer__address {
+    display: flex;
+}

@@ -1,0 +1,17 @@
+.button {
+    /* layout */
+    display: flex;
+    padding: 7px 29px 7px 28px;
+    justify-content: center;
+    align-items: center;
+
+    /* style */
+    border-radius: 100px;
+    background: #000;
+
+    /* typography */
+    color: #D4D4D4;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}

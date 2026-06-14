@@ -1,0 +1,8 @@
+.overview__container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-self: center;
+    max-width: 1250px;
+    border: 2px solid red;
+}
