@@ -13,8 +13,8 @@ export function cardHeader(title) {
     const buttonsContainer = document.createElement("div");
     buttonsContainer.classList.add("card__buttons");
 
-    const editIcon = createImage(eIcon, "edit", "icon");
-    const infoIcon = createImage(iIcon, "information", "icon");
+    const editIcon = createImage(eIcon, "edit", ["icon", "icon__action"]);
+    const infoIcon = createImage(iIcon, "information", ["icon", "icon__action"]);
 
     buttonsContainer.append(editIcon, infoIcon);
 

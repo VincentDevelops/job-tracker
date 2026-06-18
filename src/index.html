@@ -10,47 +10,216 @@
 <body>
 
     <nav class="nav">
+        <div class="nav__links">
+            <div class="logo link" data-link="home">
+                <button class="button">
+                    Job Tracker
+                </button>
+            </div>
+            <div class="link-container">
+                <ul class="links">
+                    <li class="link">
+                        <button class="button">
+                            <span>Home</span>
+                        </button>
+                    </li>
+                    <li class="link">
+                        <button class="button">
+                            <span>Dashboard</span>
+                        </button>
+                    </li>
+                    <li class="link">
+                        <button class="button" id="job-link">
+                            <span>Jobs</span>
+                        </button>
+                    </li>
+                    <li class="link">
+                        <button class="button">
+                            <span>Clients</span>
+                        </button>
+                    </li>
+                    <li class="link">
+                        <button class="button">
+                            <span>About</span>
+                        </button>
+                    </li>
+                    <li class="link more">
+                        <button class="button">
+                            <span>More</span>
+                            <img src="./Assets/Icons/fi-bs-angle-down.svg" alt="more" class="icon">
+                        </button>
+                    </li>
+                </ul>
+            </div>
 
+        </div>
+
+        <div class="nav__action">
+            <button>
+                <img src="./Assets/Icons/fi-ss-settings.svg" alt="settings">
+            </button>
+            <div class="search">
+                <img src="./Assets/Icons/fi-sr-search.svg" alt="search">
+                <input type="search">
+            </div>
+            <button class="button new-post-button">New</button>
+            <div class="profile-pic">
+                <img class="user-pfp" src="./Assets/images/selfie.jpg" alt="user image">
+            </div>
+
+        </div>
     </nav>
 
+    <main class="jobs-page-container">
+        <div class="page__title">Jobs</div>
 
-    <div class="overview__container flex">
-        <div class="overview__column">
-            <h3 class="tag__scheduled">
-                Scheduled Jobs (2)
-            </h3>
-            <div class="cards">
-                <article class="card">
-                    <!-- <img src="./Assets/images/1-newport-beach-plumber-near-me-water-filltration-installation-kitchen-faucet-restroom-faucet.jpg"
-                        alt="plumbing image" class="card__image"> -->
-                    <div class="card__header">
-                        <span class="card__title">Water Heater Removal & Installment</span>
-                        <div class="card__buttons">
-                            <img src="./Assets/Icons/fi-rs-edit.svg" alt="edit" class="icon">
-                            <img src="./Assets/Icons/fi-rs-info.svg" alt="information" class="icon">
-                        </div>
+        <div class="overview__container">
+            <article class="overview__card" data-overview-card="estimate">
+                <div class="overview__header">
+                    <div class="overview__heading">
+                        <img src="./Assets/Icons/tools-svgrepo-com.svg" alt="calendar" class="icon">
+                        <span class="overview__name">Jobs Scheduled</span>
                     </div>
-                    <div class="card__details">
-                        <div class="customer__information">
-                            <div class="customer__name">Caroline Smith</div>
-                            <div class="customer__location">
-                                <img src="./Assets/Icons/fi-rs-location-alt.svg" alt="location" class="icon">
-                                <address class="customer__address">St. George, Ut</address>
-                            </div>
+                    <button class="overview__add-btn overview__btn">
+                        <img src="./Assets/Icons/fi-bs-plus.svg" alt="add new estimate"
+                            class="icon overview__icon icon__action">
+                    </button>
+                </div>
+                <div class="overview__body">
+                    <data class="overview__count" value="5">5</data>
+                    <div class="overview__summary">
+                        <div class="overview__title-row">
+                            <span class="overview__title">Jobs Scheduled Today</span>
+                            <button class="overview__estimate-info-btn overview__btn">
+                                <img src="./Assets//Icons/fi-rs-info.svg" alt="information"
+                                    class="icon overview__icon icon__action">
+                            </button>
                         </div>
-                        <div>
-                            <img src="./Assets/Icons/fi-rs-calendar.svg" alt="calendar" class="icon">
-                            <time>Due: June 25, 2025</time>
-                        </div>
-                        <div class="tags">
-                            <div class="tag tag__low">Low</div>
-                        </div>
-                        <data>Est. $2,500</data>
+                        <data class="overview__amount" value="2300">$4,200</data>
                     </div>
-                </article>
+                </div>
+                <a href="" class="overview__link">View All Estimates</a>
+
+            </article>
+            <article class="overview__card" data-overview-card="estimate">
+                <div class="overview__header">
+                    <div class="overview__heading">
+                        <img src="./Assets/Icons/fi-rs-calendar.svg" alt="calendar" class="icon">
+                        <span class="overview__name">Estimates</span>
+                    </div>
+                    <button class="overview__add-btn overview__btn">
+                        <img src="./Assets/Icons/fi-bs-plus.svg" alt="add new estimate"
+                            class="icon overview__icon icon__action">
+                    </button>
+                </div>
+                <div class="overview__body">
+                    <data class="overview__count" value="9">9</data>
+                    <div class="overview__summary">
+                        <div class="overview__title-row">
+                            <span class="overview__title">Open Estimates</span>
+                            <button class="overview__estimate-info-btn overview__btn">
+                                <img src="./Assets//Icons/fi-rs-info.svg" alt="information"
+                                    class="icon overview__icon icon__action">
+                            </button>
+                        </div>
+                        <data class="overview__amount" value="2300">$2,300</data>
+                    </div>
+                </div>
+                <a href="" class="overview__link">View All Estimates</a>
+
+            </article>
+            <article class="overview__card" data-overview-card="estimate">
+                <div class="overview__header">
+                    <div class="overview__heading">
+                        <img src="./Assets/Icons/fi-bs-money.svg" alt="calendar" class="icon">
+                        <span class="overview__name">Invoices</span>
+                    </div>
+                    <button class="overview__add-btn overview__btn">
+                        <img src="./Assets/Icons/fi-bs-plus.svg" alt="add new estimate"
+                            class="icon overview__icon icon__action">
+                    </button>
+                </div>
+                <div class="overview__body">
+                    <data class="overview__count" value="3">3</data>
+                    <div class="overview__summary">
+                        <div class="overview__title-row">
+                            <span class="overview__title">Unpaid Invoices</span>
+                            <button class="overview__estimate-info-btn overview__btn">
+                                <img src="./Assets//Icons/fi-rs-info.svg" alt="information"
+                                    class="icon overview__icon icon__action">
+                            </button>
+                        </div>
+                        <data class="overview__amount" value="2300">$1,150</data>
+                    </div>
+                </div>
+                <a href="" class="overview__link">View All Estimates</a>
+
+            </article>
+            <article class="overview__card" data-overview-card="completed">
+                <div class="overview__header">
+                    <div class="overview__heading">
+                        <img src="./Assets/Icons/fi-rr-checkbox.svg" alt="calendar" class="icon">
+                        <span class="overview__name">Compleded MTD</span>
+                    </div>
+                    <button class="overview__add-btn overview__btn">
+                        <img src="./Assets/Icons/fi-bs-plus.svg" alt="add new estimate"
+                            class="icon overview__icon icon__action">
+                    </button>
+                </div>
+                <div class="overview__body">
+                    <data class="overview__count" value="27">27</data>
+                    <div class="overview__summary">
+                        <div class="overview__title-row">
+                            <span class="overview__title">Closed Jobs</span>
+                            <button class="overview__estimate-info-btn overview__btn">
+                                <img src="./Assets//Icons/fi-rs-info.svg" alt="information"
+                                    class="icon overview__icon icon__action">
+                            </button>
+                        </div>
+                        <data class="overview__amount" value="2300">$2,300</data>
+                    </div>
+                </div>
+                <a href="" class="overview__link">View All Estimates</a>
+
+            </article>
+        </div>
+
+        <div class="overview__container flex">
+            <div class="overview__column">
+                <h3 class="tag__scheduled">
+                    Scheduled Jobs (2)
+                </h3>
+                <div class="cards" data-cards-column="scheduled-column">
+                </div>
+            </div>
+            <div class="overview__column">
+                <h3 class="tag__scheduled">
+                    In Progress (3)
+                </h3>
+                <div class="cards" data-cards-column="in-progress-column">
+                </div>
+            </div>
+            <div class="overview__column">
+                <h3 class="tag__scheduled">
+                    Completed Jobs (18)
+                </h3>
+                <div class="cards" data-cards-column="completed-column">
+                </div>
+            </div>
+            <div class="overview__column">
+                <h3 class="tag__scheduled">
+                    Employee Status (1)
+                </h3>
+                <div class="cards" data-cards-column="waiting-parts-column">
+                </div>
             </div>
         </div>
-    </div>
+    </main>
+
+    <form action="/safe-draft" method="POST" class="new-job-form">
+
+    </form>
+
 </body>
 
 </html>

@@ -36,7 +36,7 @@ export const job = (jobTitle, desc) => {
     }
 
     const setEstimate = (est) => {
-        estimate = `$${Number(est).toLocaleString()}`
+        estimate = `Estimate: $${Number(est).toLocaleString()}`
     }
 
     const setTitle = (text) => {

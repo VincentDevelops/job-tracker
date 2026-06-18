@@ -13,6 +13,8 @@ export function cardDetails(customer, job, tag) {
     const custInfo = customerInfo(customer, job);
 
     const due = document.createElement("div");
+    due.classList.add("customer__location")
+
     const calendarIcon = createImage(calIcon, "calendar", "icon");
     const time = document.createElement("time");
     time.textContent = `Due: ${job.getDueDate()}`;

@@ -1,3 +1,8 @@
 .icon {
     width: var(--step--1);
 }
+
+.icon__action:hover {
+    filter: brightness(0) saturate(100%);
+    transform: scale(1.25);
+}
